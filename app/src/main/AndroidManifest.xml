@@ -12,13 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraceApp"
         tools:targetApi="31">
-        <activity android:name=".GraceActivity"
+        <activity
+            android:name=".GraceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".KalkulatorGrace"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
 
     </application>
 
