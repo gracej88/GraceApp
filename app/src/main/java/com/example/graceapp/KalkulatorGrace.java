@@ -38,22 +38,22 @@ public class KalkulatorGrace extends AppCompatActivity {
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                double a = Double.parseDouble(edtNilaiPertama.getText().toString());
-                double b = Double.parseDouble(edtNilaiKedua.getText().toString());
+                int a = Integer.parseInt(edtNilaiPertama.getText().toString());
+                int b = Integer.parseInt(edtNilaiKedua.getText().toString());
                 txvHasil.setText (String.valueOf (a + b));
             }
         });
         btnKali.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                double a = Double.parseDouble(edtNilaiPertama.getText().toString());
-                double b = Double.parseDouble(edtNilaiKedua.getText().toString());
+                int a = Integer.parseInt(edtNilaiPertama.getText().toString());
+                int b = Integer.parseInt(edtNilaiKedua.getText().toString());
                 txvHasil.setText(String.valueOf (a * b));
             }
         });
         btnBagi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                double a = Double.parseDouble(edtNilaiPertama.getText().toString());
-                double b = Double.parseDouble(edtNilaiKedua.getText().toString());
+                int a = Integer.parseInt(edtNilaiPertama.getText().toString());
+                int b = Integer.parseInt(edtNilaiKedua.getText().toString());
                 txvHasil.setText(String.valueOf (a / b));
             }
         });
